@@ -1,17 +1,16 @@
 #Please use the main menu items under the "text"
-- text: About Us
+- text: Про нас
   url: /about
-- text: Services
+- text: Послуги
   url: /services
-- text: Portfolios 
+- text: Портфоліо
   url: /portfolios
-- text: Blog
+- text: Новини
   url: /blog
   submenu:
-  - text: Blog Details
+  - text: В Україні
     url: /wordpress-hosting
   - text: 404
     url: /404
-- text: Contact Us
+- text: Контакти
   url: /contact
- 

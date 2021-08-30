@@ -1,6 +1,6 @@
 <nav class="main_menu">
     <ul>
-	  <li class="menu-item {% if page.url == '/' %} active_link {% endif %}"><a href="{{site.url}}">Home</a></li>
+	  <li class="menu-item {% if page.url == '/' %} active_link {% endif %}"><a href="{{site.url}}">Головна</a></li>
       {% for menu in site.data.navigation %}
       <li class="menu-item {% if page.url contains menu.url %} active_link {% endif %}"><a href="{{menu.url}}">{{menu.text}}</a>
        {% if menu.submenu %}
