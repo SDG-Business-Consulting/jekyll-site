@@ -29,12 +29,12 @@
 					</div>
 					<div class="info">
 						<h4><a href="{{service.url}}">{{service.title}}</a></h4>
-						<p>{{service.content | strip_html | truncatewords:"10" }}</p>
-						<a href="{{service.url}}" class="link_btn">Read More</a>
+						<p>{{ service.summary }}</p>
+						<a href="{{service.url}}" class="link_btn">Дізнатись більше</a>
 					</div>
 				</div>
 			</div>
-            {% endfor %}
+      {% endfor %}
 		</div>
 	</div>
 </section>
