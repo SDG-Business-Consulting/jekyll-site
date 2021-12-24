@@ -13,7 +13,6 @@ site_logo: "/assets/images/logo_1.png"
 permalink: "/:title"
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-paginate-v2
