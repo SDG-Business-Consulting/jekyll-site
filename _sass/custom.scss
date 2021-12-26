@@ -13,3 +13,41 @@ h6 {
   font-family: 'Nunito', 'Poppins', sans-serif;
   font-weight: 500;
 }
+
+/* Overrides*/
+
+.deneb_btn {
+  font-family: 'Nunito', 'Poppins', sans-serif;
+  padding: 0 1rem;
+}
+
+.header_area {
+	.site_menu {
+		.primary_menu {
+			.main_menu {
+				ul {
+					li {
+						.deneb_btn {
+							padding: 0 1rem;
+						}
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar-menu {
+  li {
+    &:hover {
+      a {
+        border-left-color: #1e282c;
+      }
+    }
+
+    .deneb_btn {
+      margin-top: 24px;
+      padding: 0 1rem;
+    }
+  }
+}
