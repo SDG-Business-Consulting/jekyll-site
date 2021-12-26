@@ -41,7 +41,7 @@ pagination:
 						<ul>
 							<li><i class="fas fa-clock"></i>{{post.date | date_to_long_string }}</li>
 							{% if post.author %}
-							<li><i class="fas fa-user"></i>By {{post.author}}</li>
+							<li><i class="fas fa-user"></i>Автор/ка: {{post.author}}</li>
 							{% endif %}
 						</ul>
 						<ul>
@@ -51,7 +51,7 @@ pagination:
 					<h3 class="title"><a href="{{post.url}}">{{post.title}}</a></h3>
 					<p>{{post.content | strip_html | truncatewords:"45" }}</p>
 					<div class="read-more-with-share d-flex justify-content-between">
-						<a href="{{post.url}}" class="post_btn link_btn">Read More</a>
+						<a href="{{post.url}}" class="post_btn link_btn">Детальніше</a>
 						{% include social_share.html %}
 					</div>
 				</div>

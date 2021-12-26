@@ -18,9 +18,28 @@ layout: default
                         {% endif %}
 						<div class="post_meta border-bottom pb-4">
 							<ul>
-								<li class="date"><i class="fas fa-clock"></i>{{page.date | date_to_long_string }}</li>
+								<li class="date">
+									<i class="fas fa-clock"></i>
+									{% assign m = page.date | date: "%-m" %}
+									{{ page.date | date: "%-d" }}
+									{% case m %}
+										{% when '1' %}січня
+										{% when '2' %}лютого
+										{% when '3' %}березня
+										{% when '4' %}квітня
+										{% when '5' %}травня
+										{% when '6' %}червня
+										{% when '7' %}липня
+										{% when '8' %}серпня
+										{% when '9' %}вересня
+										{% when '10' %}жовтня
+										{% when '11' %}листопада
+										{% when '12' %}грудня
+									{% endcase %}
+									{{ page.date | date: "%Y" }}
+								</li>
 								{% if page.author %}
-								<li><i class="fas fa-user"></i>By {{page.author}}</li>
+								<li><i class="fas fa-user"></i>Автор/ка: {{page.author}}</li>
 								{% endif %}
 							</ul>
 							<ul>
@@ -36,7 +55,7 @@ layout: default
 							<div class="col-lg-6 col-6">
                                {% if page.tags %}
 								<div class="tag">
-								  Tags: {{page | tags | capitalize }}
+								  Ключові слова: {{page | tags | capitalize }}
 								</div>
                                 {% endif %}
 							</div>
@@ -46,7 +65,7 @@ layout: default
 						</div>
 					</div>
 					<div class="recent_post blog_v1">
-						<h3>Related Blogs</h3>
+						<h3>Схожі новини</h3>
 						<div class="row">
 							{% for post in site.posts limit: "3" %}
 							<div class="col-lg-4">
@@ -66,7 +85,7 @@ layout: default
 						</div>
 					</div>
 					<div class="comment_wrapper">
-						<h3>Comments</h3>
+						<h3>Коментарі</h3>
                         {% include disqus_comments.html %}
 					</div>
 				</div>

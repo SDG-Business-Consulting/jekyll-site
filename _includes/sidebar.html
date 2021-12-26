@@ -2,7 +2,7 @@
 	<div class="widget widget_search">
 		<form>
 			<div class="form_group">
-				<input type="text" id="search-input" class="form_control" placeholder="Search..."/>
+				<input type="text" id="search-input" class="form_control" placeholder="пошук..."/>
 				<i class="fas fa-search"></i>
 				<button class="search_btn"><i class="fas fa-arrow-right"></i></button>
 			</div>
@@ -10,7 +10,7 @@
 		<ul id="results-container"></ul>
 	</div>
 	<div class="widget widget_categories">
-		<h3 class="widget-title">Category</h3>
+		<h3 class="widget-title">Категорії</h3>
 		<ul>
         {% assign categories_list = site.categories %}
           {% if categories_list.first[0] == null %}
@@ -26,8 +26,8 @@
 		</ul>
 	</div>
 	<div class="widget featured_news">
-		<h3 class="widget-title">Recent Post</h3>
-		{% for post in site.posts limit:"4" %}
+		<h3 class="widget-title">Останні новини</h3>
+		{% for post in site.posts limit:"10" %}
 		<div class="post_wrap">
 			{% if post.post_image %}
 			<div class="post_img">
@@ -43,7 +43,7 @@
 	</div>
 
 	<div class="widget widget_tag_cloud">
-		<h3 class="widget-title">Tages</h3>
+		<h3 class="widget-title">Ключові слова</h3>
 		<ul>
 
 			{% capture tags %}
