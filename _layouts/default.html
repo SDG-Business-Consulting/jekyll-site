@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<!-- All Meta -->
@@ -9,7 +9,7 @@
 	    <!-- page title -->
 		<title>{% if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</title>
 		<!-- Favicon Icon -->
-    	<link rel="shortcut icon" href="{{relative_url}}/assets/images/favicon.ico" type="image/png">
+    {% include favicon.html %}
 		<!-- All css -->
 		<!--Bootstrap css-->
 	    <link rel="stylesheet" href="{{relative_url}}/assets/css/bootstrap.min.css">
