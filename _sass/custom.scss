@@ -22,6 +22,16 @@ h6 {
 }
 
 .header_area {
+  .sidenav_menu {
+    .sidebar-menu {
+      li {
+        a {
+          text-transform: none;
+        }
+      }
+    }
+  }
+
 	.site_menu {
 		.primary_menu {
 			.main_menu {
@@ -34,6 +44,21 @@ h6 {
         }
       }
     }
+  }
+
+  .sticky-brand-name {
+    display: none;
+  }
+}
+
+.header_area.sticky {
+  .sticky-brand-name {
+    color: #feb000;
+    display: unset;
+    font-weight: bold;
+    margin-left: 0.75rem;
+    position: relative;
+    top: 2px;
   }
 }
 
