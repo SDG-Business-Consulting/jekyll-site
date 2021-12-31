@@ -39,7 +39,7 @@ pagination:
 				<div class="deneb_info">
 					<div class="post_meta">
 						<ul>
-							<li><i class="fas fa-clock"></i>{{post.date | date_to_long_string }}</li>
+							<li><i class="fas fa-clock"></i>{{ post.date | ukrainianDate }}</li>
 							{% if post.author %}
 							<li><i class="fas fa-user"></i>Автор/ка: {{post.author}}</li>
 							{% endif %}

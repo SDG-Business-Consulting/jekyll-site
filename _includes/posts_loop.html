@@ -9,23 +9,7 @@
 			<ul>
 				<li>
 					<i class="fas fa-clock"></i>
-					{% assign m = post.date | date: "%-m" %}
-					{{ post.date | date: "%-d" }}
-					{% case m %}
-						{% when '1' %}січня
-						{% when '2' %}лютого
-						{% when '3' %}березня
-						{% when '4' %}квітня
-						{% when '5' %}травня
-						{% when '6' %}червня
-						{% when '7' %}липня
-						{% when '8' %}серпня
-						{% when '9' %}вересня
-						{% when '10' %}жовтня
-						{% when '11' %}листопада
-						{% when '12' %}грудня
-					{% endcase %}
-					{{ post.date | date: "%Y" }}
+          {{ post.date | ukrainianDate }}
 				</li>
 				{% if post.author %}
 				<li><i class="fas fa-user"></i>Автор/ка: {{post.author}}</li>

@@ -20,23 +20,7 @@ layout: default
 							<ul>
 								<li class="date">
 									<i class="fas fa-clock"></i>
-									{% assign m = page.date | date: "%-m" %}
-									{{ page.date | date: "%-d" }}
-									{% case m %}
-										{% when '1' %}січня
-										{% when '2' %}лютого
-										{% when '3' %}березня
-										{% when '4' %}квітня
-										{% when '5' %}травня
-										{% when '6' %}червня
-										{% when '7' %}липня
-										{% when '8' %}серпня
-										{% when '9' %}вересня
-										{% when '10' %}жовтня
-										{% when '11' %}листопада
-										{% when '12' %}грудня
-									{% endcase %}
-									{{ page.date | date: "%Y" }}
+									{{ page.date | ukrainianDate }}
 								</li>
 								{% if page.author %}
 								<li><i class="fas fa-user"></i>Автор/ка: {{page.author}}</li>
@@ -76,7 +60,7 @@ layout: default
 									</div>
 									{% endif %}
 									<div class="deneb_info">
-										<div class="date">{{post.date | date_to_long_string }}</div>
+										<div class="date">{{ post.date | ukrainianDate }}</div>
 										<h3><a href="{{post.url}}">{{post.title}}</a></h3>
 									</div>
 								</div>
