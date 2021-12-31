@@ -68,8 +68,8 @@
 	}
 }
 
-// deneb_achivement
-.deneb_achivement{
+// deneb_achievements
+.deneb_achievements {
 	padding-bottom: 120px;
 	position: relative;
 	z-index: 1;
@@ -95,7 +95,7 @@
 			margin-bottom: 20px;
 		}
 	}
-	.achivment_wrapper{
+	.achievement_wrapper{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
@@ -107,7 +107,7 @@
 		@media #{$xs}{
 			justify-content: center;
 		}
-		.single_achivment{
+		.single_achievement{
 			@media #{$lg}{
 				width: 180px;
     			height: 180px;
@@ -148,7 +148,8 @@
 		}
 	}
 }
-.deneb_achivement{
+
+.deneb_achievements {
 	.section_title{
 		h2{
 			position: relative;
