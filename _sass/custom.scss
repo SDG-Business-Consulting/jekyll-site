@@ -120,6 +120,37 @@ h6 {
   }
 }
 
+.deneb_sidebar {
+  .widget_search {
+    .form_group {
+      .form_control {
+        padding-left: 50px;
+      }
+    }
+
+    #results-container {
+      margin: 1rem;
+
+      li {
+        padding: 0.75rem 0;
+
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #EEE;
+        }
+
+        a {
+          color: #011a3e;
+          display: block;
+
+          &:hover {
+            color: #feb000;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .deneb_breadcrumb {
     padding: 130px 0 25px;
