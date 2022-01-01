@@ -5,10 +5,10 @@
 		<nav class="page-navigation pagination">
 		<ul>
 		    {% if paginator.previous_page %}
-		    <li class="page-item prev"><a class="active" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Prev</a></li>
+		    <li class="page-item prev"><a class="active" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Назад</a></li>
 		    {% endif %}
 		    {% if paginator.next_page %}
-		    <li class="page-item next"><a class="pagi-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Next</a></li> 
+		    <li class="page-item next"><a class="pagi-link" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Далі</a></li>
 		    {% endif %}
 		</ul>
 		</nav>
@@ -16,4 +16,3 @@
 		</div>
 	</div>
 </div>
-

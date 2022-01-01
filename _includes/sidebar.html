@@ -24,6 +24,21 @@
         {% assign categories_list = nil %}
 		</ul>
 	</div>
+
+  <div class="widget widget_tag_cloud">
+		<h3 class="widget-title">Ключові слова</h3>
+		<ul>
+			{% capture tags %}
+              {% for tag in site.tags %}
+                <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}">
+                   <a class="tag_1" href="/{{ site.tag_page_dir }}/{{ tag[0] | slugify: 'pretty' }}"><span><i class="fas fa-check"></i></span> {{ tag[0] }}</a>
+                </li>
+              {% endfor %}
+            {% endcapture %}
+            {{ tags | split:'</li>' | sort | join:'</li>' }}
+		</ul>
+	</div>
+
 	<div class="widget featured_news">
 		<h3 class="widget-title">Останні новини</h3>
 		{% for post in site.posts limit:"10" %}
@@ -39,20 +54,5 @@
 			</div>
 		</div>
         {% endfor %}
-	</div>
-
-	<div class="widget widget_tag_cloud">
-		<h3 class="widget-title">Ключові слова</h3>
-		<ul>
-
-			{% capture tags %}
-              {% for tag in site.tags %}
-                <li data-sort="{{ site.posts.size | minus: tag[1].size | prepend: '0000' | slice: -4, 4 }}">
-                   <a class="tag_1" href="/{{ site.tag_page_dir }}/{{ tag[0] | slugify: 'pretty' }}"><span><i class="fas fa-check"></i></span> {{ tag[0] }}</a>
-                </li>
-              {% endfor %}
-            {% endcapture %}
-            {{ tags | split:'</li>' | sort | join:'</li>' }}
-		</ul>
 	</div>
 </div>

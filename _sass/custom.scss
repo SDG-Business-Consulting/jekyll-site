@@ -52,6 +52,36 @@ h6 {
   }
 }
 
+.deneb_pagination {
+  ul {
+    li {
+      margin: 0;
+
+      &.page-item.next {
+        position: absolute;
+        right: 15px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      li {
+        a {
+          font-size: 1.2rem;
+          line-height: 50px;
+        }
+      }
+
+      .next,
+      .prev {
+        a {
+          height: 50px;
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
 .header_area {
   .sidenav_menu {
     .sidebar-menu {
@@ -90,6 +120,14 @@ h6 {
     margin-left: 0.75rem;
     position: relative;
     top: 2px;
+  }
+}
+
+.post_content {
+  dl,
+  ol,
+  ul {
+    margin-left: 20px;
   }
 }
 
@@ -147,6 +185,15 @@ h6 {
           }
         }
       }
+    }
+  }
+}
+
+.social-share {
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 5px;
     }
   }
 }
