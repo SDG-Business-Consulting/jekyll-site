@@ -16,6 +16,10 @@ h6 {
 
 /* Overrides*/
 
+.deneb_breadcrumb {
+  padding: 200px 0 50px;
+}
+
 .deneb_btn {
   font-family: 'Nunito', 'Poppins', sans-serif;
   padding: 0 1rem;
@@ -89,6 +93,18 @@ h6 {
   }
 }
 
+.service_wrapper {
+  .service_tab_wrap {
+    .tab-content {
+      .deneb_content_box {
+        li {
+            margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
 .sidebar-menu {
   li {
     &:hover {
@@ -100,6 +116,39 @@ h6 {
     .deneb_btn {
       margin-top: 24px;
       padding: 0 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .deneb_breadcrumb {
+    padding: 130px 0 25px;
+  }
+}
+
+@media (max-width: 450px) {
+  .service_tab_nav {
+    a {
+      max-height: 150px;
+      max-width: 150px;
+    }
+  }
+
+  .service_wrapper {
+    .service_tab_wrap {
+      .service_tab_nav {
+        .nav-tabs {
+          .nav-item {
+            .nav-link {
+              padding: 20px 15px;
+
+              &.long-text {
+                padding: 5px 15px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
