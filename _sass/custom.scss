@@ -21,6 +21,33 @@ h6 {
   padding: 0 1rem;
 }
 
+.deneb_cta {
+  .cta_wrapper {
+    .button_box {
+      .deneb_btn:hover {
+        color: #feb000 !important;
+      }
+    }
+  }
+}
+
+.deneb_footer {
+  .widget_wrapper {
+    .widget_contact {
+      .contact_info {
+        .single_info {
+          max-width: none;
+
+          .icon {
+            position: relative;
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
 .header_area {
   .sidenav_menu {
     .sidebar-menu {
