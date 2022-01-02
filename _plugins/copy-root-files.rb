@@ -6,7 +6,7 @@ require 'fileutils'
 
 module Jekyll
   Jekyll::Hooks.register :site, :post_write do |post|
-    Dir.glob('_root/*.*') do |file|
+    Dir.glob('_root/*') do |file|
       sourcePath = file
       outputPath = File.join('_site', File.basename(file) )
       FileUtils.cp(sourcePath, outputPath)
