@@ -3,7 +3,7 @@ author: Ірина Лупашко
 categories: [Міжнародна співпраця]
 date:   2021-10-12 18:16:35 +0200
 layout: post
-post_image: "/assets/images/blog/10.jpg"
+post_image: "/assets/images/news/horizon-europe.jpg"
 tags: [Horizon Europe, конкурс]
 title:  "ЄС погодив участь України в HORIZON EUROPE"
 ---

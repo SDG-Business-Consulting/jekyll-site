@@ -82,6 +82,37 @@ h6 {
   }
 }
 
+.deneb_sidebar {
+  .widget_search {
+    .form_group {
+      .form_control {
+        padding-left: 50px;
+      }
+    }
+
+    #results-container {
+      margin: 1rem;
+
+      li {
+        padding: 0.75rem 0;
+
+        &:not(:last-of-type) {
+          border-bottom: 1px solid #EEE;
+        }
+
+        a {
+          color: #011a3e;
+          display: block;
+
+          &:hover {
+            color: #feb000;
+          }
+        }
+      }
+    }
+  }
+}
+
 .header_area {
   .sidenav_menu {
     .sidebar-menu {
@@ -154,37 +185,6 @@ h6 {
     .deneb_btn {
       margin-top: 24px;
       padding: 0 1rem;
-    }
-  }
-}
-
-.deneb_sidebar {
-  .widget_search {
-    .form_group {
-      .form_control {
-        padding-left: 50px;
-      }
-    }
-
-    #results-container {
-      margin: 1rem;
-
-      li {
-        padding: 0.75rem 0;
-
-        &:not(:last-of-type) {
-          border-bottom: 1px solid #EEE;
-        }
-
-        a {
-          color: #011a3e;
-          display: block;
-
-          &:hover {
-            color: #feb000;
-          }
-        }
-      }
     }
   }
 }

@@ -34,9 +34,9 @@ layout: default
 					<div class="post_share_tag">
 						<div class="row">
 							<div class="col-lg-6 col-6">
-                               {% if page.tags %}
+                               {% if page.tags and page.tags.size > 0 %}
 								<div class="tag">
-								  Ключові слова: {{page | tags | capitalize }}
+								  Ключові слова: {{page | tags }}
 								</div>
                                 {% endif %}
 							</div>
