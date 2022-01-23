@@ -1,10 +1,17 @@
+{%- if post -%}
+  {% assign title = post.title -%}
+  {% assign url = post.url -%}
+{%- else -%}
+  {% assign title = page.title -%}
+  {% assign url = page.url -%}
+{%- endif -%}
 <div class="social-share">
 	<div class="share">
 		<ul>
       <li>Поділитись:</li>
       <li>
         <a
-          href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+          href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ url }}"
           target="_blank"
           title="Поділитись через Facebook"
         >
@@ -13,7 +20,7 @@
       </li>
       <li>
 		    <a
-          href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+          href="https://twitter.com/intent/tweet?text={{ title }}&url={{ site.url }}{{ site.baseurl }}{{ url }}"
 		      target="_blank"
 		      title="Поділитись через Twitter"
         >
@@ -22,7 +29,7 @@
       </li>
       <li>
         <a
-          href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
+          href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ site.baseurl }}{{ url }}"
           target="_blank"
           title="Поділитись через LinkedIn"
         >

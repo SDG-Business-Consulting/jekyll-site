@@ -35,6 +35,7 @@ jekyll-archives:
   layout: category
   permalinks:
     category: '/category/:name/'
+    tag: '/keyword/:name/'
 
 # Social
 facebook_url: "https://www.facebook.com/"
