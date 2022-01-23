@@ -83,6 +83,16 @@ h6 {
 }
 
 .deneb_sidebar {
+  .featured_news {
+    .post_wrap {
+      .post_img {
+        img {
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
   .widget_search {
     .form_group {
       .form_control {
