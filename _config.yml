@@ -6,7 +6,7 @@ description: >- # this means to ignore newlines until the next variable
   Google search results) and in your feed.xml site description.
 email: "info@sdgbusinessconsulting.com"
 hero_image: "/assets/images/breadcrumb_bg.jpg"
-permalink: "/:title"
+permalink: "/news/:year/:title"
 site_logo: "/assets/images/logo.png"
 site_preloader: true
 title: "SDG Business Consulting"
@@ -34,8 +34,8 @@ jekyll-archives:
   enabled: all
   layout: category
   permalinks:
-    category: '/category/:name/'
-    tag: '/keyword/:name/'
+    category: '/news/category/:name/'
+    tag: '/news/keyword/:name/'
 
 # Social
 facebook_url: "https://www.facebook.com/"
@@ -47,7 +47,7 @@ sass:
   style: compressed
 
 # Tag pages
-tag_page_dir: keyword
+tag_page_dir: news/keyword
 tag_permalink_style: pretty
 
 ############################################################
